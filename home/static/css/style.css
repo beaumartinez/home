@@ -1,0 +1,19 @@
+a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: inherit;
+}
+
+body {
+    background: url('/static/images/swirl.png');
+    font-family: "open sans", helvetica, arial, sans-serif;
+    font-size: 24px;
+}
+
+.hidden {
+    display: none;
+}
+
+.title {
+    margin-top: 24px;
+}
