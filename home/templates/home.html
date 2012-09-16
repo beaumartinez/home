@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <style>
+        body {
+            text-align: center;
+        }
+
+        ul.contact,
+        ul.skills {
+            list-style: none;
+            padding: inherit;
+        }
+
+        .contact li,
+        .skills li {
+            display: inline;
+        }
+
+        .contact li:after,
+        .skills li:after {
+            content: " • ";
+        }
+
+        .contact li:last-child:after,
+        .skills li:last-child:after {
+            content: none;
+        }
+
+        .contact {
+            margin-top: 48px;
+        }
+
+        .skills {
+            margin-top: 0;
+        }
+
+        .tagline {
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+    </style>
+
+    <meta name=description content="Beau Martinez. Python, Django, Flask, JavaScript, MongoDB. London. Programmer. Programming, motherfucker.">
+
+    <article itemscope itemtype=http://schema.org/Person>
+        <h1 class=title itemprop=name><span itemprop=givenName>Beau</span> <span itemprop=familyName>Martinez</span></h1>
+
+        <ul class=skills>
+            <li>Python
+            <li>Django
+            <li>Flask
+            <li>JavaScript
+            <li>MongoDB
+        </ul>
+
+        <p class=hidden itemProp=jobTitle>Programmer</p>
+
+        <p itemprop=address itemscope itemtype=http://schema.org/PostalAddress><span itemprop=addressRegion>London</span>
+
+        <p class=tagline>Programming, motherfucker
+
+        <ul class=contact>
+            <li><a href=http://github.com/beaumartinez title=GitHub>GitHub</a>
+            <li><a href=http://twitter.com/beaumartinez title=Twitter>Twitter</a>
+            <li><a href=mailto:beau@beaumartinez.com title=Email>Email <span class=hidden itemprop=email>beau@beaumartinez.com</span></a>
+        </ul>
+    </article>
+{% endblock %}

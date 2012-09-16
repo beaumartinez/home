@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}404 — Beau Martinez{% endblock %}
+
+{% block content %}
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+
+    <article>
+        <h1 class=title>404</h1>
+
+        <p>We couldn't find "<span class=path>{{ path }}</span>"
+    </article>
+{% endblock %}
