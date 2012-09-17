@@ -7,27 +7,31 @@
         }
 
         ul.contact,
+        ul.nav,
         ul.skills {
             list-style: none;
             padding: inherit;
         }
 
         .contact li,
+        .nav li,
         .skills li {
             display: inline;
         }
 
         .contact li:after,
+        .nav li:after,
         .skills li:after {
             content: "• ";
         }
 
         .contact li:last-child:after,
+        .nav li:last-child:after,
         .skills li:last-child:after {
             content: none;
         }
 
-        .contact {
+        .nav {
             margin-top: 48px;
         }
 
@@ -55,6 +59,10 @@
         <p itemprop=address itemscope itemtype=http://schema.org/PostalAddress><span itemprop=addressRegion>London</span>
 
         <p class=tagline>Programming, motherfucker
+
+        <ul class=nav>
+            <li><a href="{{ url_for('about') }}">About</a>
+        </ul>
 
         <ul class=contact>
             <li><a href=http://github.com/beaumartinez title=GitHub>GitHub</a> <li><a href=http://twitter.com/beaumartinez title=Twitter>Twitter</a> <li><a href=mailto:beau@beaumartinez.com title=Email>Email <span class=hidden itemprop=email>beau@beaumartinez.com</span></a>
