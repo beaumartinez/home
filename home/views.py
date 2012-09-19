@@ -24,6 +24,6 @@ def about():
 @app.errorhandler(404)
 def page_not_found(error):
     path = request.path
-    path = path[1:]
+    path = path.strip('/')
 
     return render_template('404.html', path=path), 404
