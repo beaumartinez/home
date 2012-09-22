@@ -5,6 +5,7 @@ from flask import render_template, request
 
 from home import app
 
+AGE_STARTED_PROGRAMMING = 14
 BIRTHDAY = date(1990, 4, 4)
 
 @app.route('/')
@@ -19,7 +20,9 @@ def about():
     age = relativedelta(now, BIRTHDAY)
     age = age.years
 
-    return render_template('about.html', age=age)
+    years_programming = age - AGE_STARTED_PROGRAMMING
+
+    return render_template('about.html', age=age, years_programming=years_programming)
 
 @app.errorhandler(404)
 def page_not_found(error):
