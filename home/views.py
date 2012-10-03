@@ -14,7 +14,6 @@ def home():
 @app.route('/about/')
 def about():
     now = datetime.utcnow()
-    now = now.date()
 
     years_programming = relativedelta(now, DATE_STARTED_PROGRAMMING)
     years_programming = years_programming.years
