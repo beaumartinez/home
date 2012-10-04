@@ -5,7 +5,7 @@ from flask import render_template, request
 
 from home import app
 
-DATE_STARTED_PROGRAMMING = date(2004, 1, 1)
+DATE_STARTED_PROGRAMMING = date(2004, 4, 4)
 
 @app.route('/')
 def home():
