@@ -7,31 +7,31 @@
         }
 
         ul.contact,
-        ul.nav,
+        ul.home-nav,
         ul.skills {
             list-style: none;
             padding: inherit;
         }
 
         .contact li,
-        .nav li,
+        .home-nav li,
         .skills li {
             display: inline;
         }
 
         .contact li:after,
-        .nav li:after,
+        .home-nav li:after,
         .skills li:after {
             content: "• ";
         }
 
         .contact li:last-child:after,
-        .nav li:last-child:after,
+        .home-nav li:last-child:after,
         .skills li:last-child:after {
             content: none;
         }
 
-        .nav {
+        .home-nav {
             margin-top: 48px;
         }
 
@@ -58,7 +58,7 @@
 
         <p class=tagline>Programming, motherfucker
 
-        <ul class=nav>
+        <ul class=home-nav>
             <li><a href="{{ url_for('about') }}">About</a>
         </ul>
 
