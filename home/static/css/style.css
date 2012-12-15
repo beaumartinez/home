@@ -26,3 +26,30 @@ body {
         max-width: 720px;
     }
 }
+
+/* Nav shit */
+
+nav {
+    display: block;
+    padding-bottom: 48px;
+    padding-top: 24px;
+}
+
+nav a.site-name {
+    display: block;
+    float: left;
+}
+
+nav .nav {
+    float: right;
+}
+
+nav ul {
+    display: inline;
+    list-style: none;
+    margin: inherit;
+}
+
+nav ul li {
+    display: inline;
+}

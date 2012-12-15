@@ -11,6 +11,13 @@
 
 <meta name=viewport content="maximum-scale=1, width=device-width">
 
+<nav>
+    <a class=site-name href="{{ url_for('home') }}">Beau Martinez</a>
+    <ul class=nav>
+        <li><a href="{{ url_for('about') }}">About</a>
+    </ul>
+</nav>
+
 {% block content %}{% endblock %}
 
 <script async src=/static/js/ga.js></script>
