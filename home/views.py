@@ -2,6 +2,7 @@ from datetime import date, datetime
 
 from dateutil.relativedelta import relativedelta
 from flask import render_template, request
+from humanize import apnumber
 
 from home import app
 
@@ -17,6 +18,7 @@ def about():
 
     years_programming = relativedelta(now, DATE_STARTED_PROGRAMMING)
     years_programming = years_programming.years
+    years_programming = apnumber(years_programming)
 
     return render_template('about.html', years_programming=years_programming)
 
