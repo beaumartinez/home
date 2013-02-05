@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 
-{% block content %}
+{% block extra_head %}
+    <meta name=description content="Beau Martinez. Python, Django, JavaScript. Programmer, London. Programming, motherfucker.">
+
     <style>
         body {
             text-align: center;
@@ -44,9 +46,9 @@
             margin-bottom: 0;
         }
     </style>
+{% endblock %}
 
-    <meta name=description content="Beau Martinez. Python, Django, JavaScript. Programmer, London. Programming, motherfucker.">
-
+{% block content %}
     <article itemscope itemtype=http://schema.org/Person>
         <h1 class=title itemprop=name><span itemprop=givenName>Beau</span> <span itemprop=familyName>Martinez</span></h1>
 
