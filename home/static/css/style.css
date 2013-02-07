@@ -6,9 +6,23 @@ body {
     background: url('/static/images/swirl.png');
     font-family: "open sans", helvetica, arial, sans-serif;
     font-size: 24px;
+    font-weight: 300;
     margin-left: 24px;
     margin-right: 24px;
     text-rendering: optimizeLegibility;
+    visibility: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h5,
+b,
+strong {
+    font-weight: 400;
 }
 
 .hidden {
@@ -17,6 +31,10 @@ body {
 
 .title {
     margin-top: 24px;
+}
+
+.wf-active body {
+    visibility: visible;
 }
 
 @media(min-width: 768px) {
