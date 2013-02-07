@@ -36,7 +36,8 @@ strong {
     margin-top: 24px;
 }
 
-.wf-active #container {
+.wf-active #container,
+.wf-inactive #container {
     visibility: visible;
 }
 
