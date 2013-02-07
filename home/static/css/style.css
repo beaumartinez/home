@@ -2,6 +2,18 @@ a {
     color: inherit;
 }
 
+b,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h5,
+strong {
+    font-weight: 400;
+}
+
 body {
     background: url('/static/images/square_bg.png');
     font-family: "open sans", helvetica, arial, sans-serif;
@@ -10,18 +22,6 @@ body {
     margin-left: 24px;
     margin-right: 24px;
     text-rendering: optimizeLegibility;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-h5,
-b,
-strong {
-    font-weight: 400;
 }
 
 #container {
