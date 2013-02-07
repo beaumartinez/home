@@ -10,7 +10,6 @@ body {
     margin-left: 24px;
     margin-right: 24px;
     text-rendering: optimizeLegibility;
-    visibility: hidden;
 }
 
 h1,
@@ -25,6 +24,10 @@ strong {
     font-weight: 400;
 }
 
+#container {
+    visibility: hidden;
+}
+
 .hidden {
     display: none;
 }
@@ -33,7 +36,7 @@ strong {
     margin-top: 24px;
 }
 
-.wf-active body {
+.wf-active #container {
     visibility: visible;
 }
 

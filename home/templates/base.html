@@ -12,14 +12,16 @@
 
 {% block extra_head %}{% endblock %}
 
-<nav>
-    <a class=site-name href="{{ url_for('home') }}">Beau Martinez</a>
-    <ul class=nav>
-        <li><a href="{{ url_for('about') }}">About</a>
-    </ul>
-</nav>
+<div id=container>
+    <nav>
+        <a class=site-name href="{{ url_for('home') }}">Beau Martinez</a>
+        <ul class=nav>
+            <li><a href="{{ url_for('about') }}">About</a>
+        </ul>
+    </nav>
 
-{% block content %}{% endblock %}
+    {% block content %}{% endblock %}
+</div>
 
 <script async src=/static/js/webfonts.js></script>
 <script async src=/static/js/ga.js></script>
