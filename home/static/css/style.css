@@ -24,10 +24,6 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-#container {
-    visibility: hidden;
-}
-
 .hidden {
     display: none;
 }
@@ -36,9 +32,8 @@ body {
     margin-top: 24px;
 }
 
-.wf-active #container,
-.wf-inactive #container {
-    visibility: visible;
+.wf-loading #container {
+    visibility: hidden;
 }
 
 @media(min-width: 768px) {

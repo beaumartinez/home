@@ -1,27 +1,29 @@
 <!doctype html>
 
-<meta charset=utf-8>
-<title>{% block title %}Beau Martinez{% endblock %}</title>
+<html class=wf-loading>
+    <meta charset=utf-8>
+    <title>{% block title %}Beau Martinez{% endblock %}</title>
 
-<link href=/static/images/transparent.png rel=icon>
+    <link href=/static/images/transparent.png rel=icon>
 
-<link href=/static/css/normalize.css rel=stylesheet>
-<link href=/static/css/style.css rel=stylesheet>
+    <link href=/static/css/normalize.css rel=stylesheet>
+    <link href=/static/css/style.css rel=stylesheet>
 
-<meta name=viewport content="maximum-scale=1, width=device-width">
+    <meta name=viewport content="maximum-scale=1, width=device-width">
 
-{% block extra_head %}{% endblock %}
+    {% block extra_head %}{% endblock %}
 
-<div id=container>
-    <nav>
-        <a class=site-name href="{{ url_for('home') }}">Beau Martinez</a>
-        <ul class=nav>
-            <li><a href="{{ url_for('about') }}">About</a>
-        </ul>
-    </nav>
+    <div id=container>
+        <nav>
+            <a class=site-name href="{{ url_for('home') }}">Beau Martinez</a>
+            <ul class=nav>
+                <li><a href="{{ url_for('about') }}">About</a>
+            </ul>
+        </nav>
 
-    {% block content %}{% endblock %}
-</div>
+        {% block content %}{% endblock %}
+    </div>
 
-<script async src=/static/js/webfonts.js></script>
-<script async src=/static/js/ga.js></script>
+    <script async src=/static/js/webfonts.js></script>
+    <script async src=/static/js/ga.js></script>
+</html>
